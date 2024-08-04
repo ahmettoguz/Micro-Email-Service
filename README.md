@@ -1,13 +1,14 @@
-docker build -t micro-backend-image .
+-----------------------------------------------------------------------------------
+create application-prod.properties file as copy of the dev.properties
+change port to 80
 
-docker run -d -p 8080:80 --name micro-backend-container micro-backend-image
+-----------------------------------------------------------------------------------
+docker build -t micro-email-service-image .
+
+docker run -d -p 8080:80 --name micro-email-service-container micro-email-service-image
 
 docker ps -a
 
-docker rm -f micro-backend-container
+docker rm -f micro-email-service-container
 
 mvnw spring-boot:run
-
-
-create application-prod.properties file as copy of the dev.properties
-change port to 80
