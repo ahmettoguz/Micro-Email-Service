@@ -12,3 +12,7 @@ docker ps -a
 docker rm -f micro-email-service-container
 
 mvnw spring-boot:run
+
+swagger:
+http://localhost/email/sw/swagger-ui/index.html
+http://localhost/email/sw/v3/api-docs
