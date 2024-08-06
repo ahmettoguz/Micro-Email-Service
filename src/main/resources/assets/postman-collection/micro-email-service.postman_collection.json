@@ -46,7 +46,7 @@
 			"response": []
 		},
 		{
-			"name": "health-check/info Copy",
+			"name": "email/service/send",
 			"request": {
 				"method": "POST",
 				"header": [],
