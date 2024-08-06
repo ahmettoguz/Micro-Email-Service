@@ -47,6 +47,7 @@ This project aims to manage email transmissions using Docker and microservices a
 
 <h2 id="features">🔥 Features</h2>
 
++ Manual Postman endpoint tests implemented.
 + Swagger documentation has been integrated.
 + The application has been Dockerized.
 + Environment variables have been adjusted.
