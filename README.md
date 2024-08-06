@@ -3,7 +3,7 @@
 <br>
 
 <div align="center">
-    <img width=300 src="src/main/resources/assets/img/banner.png">
+    <img width=300 src="src/main/resources/assets/banner/banner.png">
 </div>
 
 ## 🔍 Table of Contents
@@ -55,9 +55,7 @@ This project aims to manage email transmissions using Docker and microservices a
 
 <h2 id="releases">🚢 Releases</h2> 
 
-&nbsp; [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Backend/tree/release/1.1.0)
-
-&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Backend/tree/release/1.0.0)
+&nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.0.0)
 
 <br/>
 
@@ -93,7 +91,7 @@ docker rm -f micro-email-container
 
 <h2 id="endpoint-documentation">📍 Endpoint Documentation</h2>
 
-![endpoint-doc](https://github.com/user-attachments/assets/dd8aa4ac-a7f0-41aa-987d-d62f4c6f35ef)
+![endpoint-doc](src/main/resources/assets/endpoint-doc/endpoint-doc.png)
 
 <br/>
 
