@@ -5,7 +5,7 @@
 ## 🔍 Table of Contents
 
 - [Features](#features)
-- [Limitations](#limitations)
+- [Next Release Features](#next-release-features)
 - [System Startup](#system-startup)
   - [Developer Mode](#developer-mode)
   - [Production Mode](#production-mode)
@@ -23,10 +23,11 @@
 
 <br/>
 
-<h2 id="limitations">🚧 Limitations</h2>
+<h2 id="next-release-features">🚧 Next Release Features</h2>
 
-- Lack of TLS/HTTPS support.
-- Lack of internal communication with frontend.
+- Communication with frontend.
+- Internal communication with frontend.
+
 
 <br/>
   
@@ -74,4 +75,3 @@ To ensure high-quality assurance through manual testing, investigate the [`Postm
 
 
 [🔝](#top)
-
