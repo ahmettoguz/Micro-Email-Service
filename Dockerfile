@@ -29,7 +29,7 @@ WORKDIR /app
 COPY --from=builder /app/target/*.jar app.jar
 
 # Expose the application port
-EXPOSE 8082
+EXPOSE 80
 
 # Set the active profile to 'prod'
 ENV SPRING_PROFILES_ACTIVE=prod
