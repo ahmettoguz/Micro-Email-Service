@@ -64,13 +64,13 @@ docker rm -f micro-email-container
 
 <h2 id="endpoint-documentation">📍 Endpoint Documentation</h2>
 
-![endpoint-doc](src/main/resources/assets/request/micro-email-service.postman_collection.json)
+![endpoint-doc](src/main/resources/assets/endpoint-doc/endpoint-doc.png)
 
 <br/>
 
 <h2 id="manuel-testing">🔬 Manual Testing</h2>
 
-To ensure high-quality assurance through manual testing, investigate the [`Postman Collection`](src/main/resources/assets/postman-collection/micro-email-service.postman_collection.json).
+To ensure high-quality assurance through manual testing, investigate the [`Postman Collection`](src/main/resources/assets/request/micro-email-service.postman_collection.json).
 
 
 [🔝](#top)
