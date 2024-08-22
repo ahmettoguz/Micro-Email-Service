@@ -49,14 +49,17 @@ This project aims to manage email transmissions using Docker and microservices a
 
 <h2 id="features">🔥 Features</h2>
 
-+ Manual Postman endpoint tests implemented.
-+ Swagger documentation has been integrated.
-+ The application has been Dockerized.
-+ Environment variables have been adjusted.
++ **External Frontend Communication:** Seamlessly integrates with external frontends.
++ **Manual Testing:** Postman used for endpoint testing.
++ **Swagger Documentation:** API documentation integrated for streamlined development.
++ **Environment Configuration:** Variables have been adjusted for optimal flexibility.
++ **Dockerization:** The application is containerized for consistent deployment.
 
 <br/>
 
 <h2 id="releases">🚢 Releases</h2> 
+
+&nbsp; [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.1.0)
 
 &nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.0.0)
 
@@ -77,7 +80,7 @@ mvnw spring-boot:run
 ```
 docker build -t micro-email-image .
 
-docker run -d -p 8080:80 --name micro-email-container micro-email-image
+docker run -d -p 8082:80 --name micro-email-container micro-email-image
 
 docker ps -a
 
