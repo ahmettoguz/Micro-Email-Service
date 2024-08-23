@@ -16,7 +16,7 @@
 
 <h2 id="features">🔥 Features</h2>
 
-+ **External Frontend Communication:** Seamlessly integrates with external frontends.
++ **External Communication:** Manage communication with frontend.
 + **Manual Testing:** Postman used for endpoint testing.
 + **Swagger Documentation:** API documentation integrated for streamlined development.
 + **Environment Configuration:** Variables have been adjusted for optimal flexibility.
