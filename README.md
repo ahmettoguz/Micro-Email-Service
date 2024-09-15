@@ -1,4 +1,4 @@
-<h1 id="top" align="center">🚢 Release Version 1.1.0</h1> 
+<h1 id="top" align="center">🚢 Release Version 1.1.1</h1> 
 
 <br/>
 
@@ -34,6 +34,10 @@
 
 <h3 id="developer-mode">🧪 Developer Mode</h3>
 
+* Place credentials in the `application-dev.properties` file.
+
+<br/>
+  
 #### Using command line
 
 ```
@@ -56,10 +60,12 @@ docker rm -f micro-email-container
 
 <h3 id="production-mode">⚡Production Mode</h3> 
 
-1. Copy `application-dev.properties` to create `application-prod.properties`.
-2. Place credentails in a `application-prod.properties`.
-3. Follow the instructions in the [`Micro-Docker-Config repository`](https://github.com/ahmettoguz/Micro-Docker-Config) to configure Docker for production.
-
+* Copy `application-dev.properties` to create `application-prod.properties`.
+* change `app.var.appMode` to `prod`.
+* change `server.port` to `80`.
+* Place credentials in the `application-dev.properties` file.
+* Follow the instructions in the [`Micro-Docker-Config repository`](https://github.com/ahmettoguz/Micro-Docker-Config) to configure Docker for production.
+  
 <br/>
 
 <h2 id="endpoint-documentation">📍 Endpoint Documentation</h2>
@@ -70,7 +76,7 @@ docker rm -f micro-email-container
 
 <h2 id="manuel-testing">🔬 Manual Testing</h2>
 
-To ensure high-quality assurance through manual testing, investigate the [`Postman Collection`](src/main/resources/assets/request/micro-email-service.postman_collection.json).
+To run the Postman tests, first import the Postman collection file from the path ./src/main/resources/postman-request/ into Postman by selecting the "Import" option. After importing, locate the collection in Postman, execute the individual requests for each. Review the responses to ensure that the endpoints are functioning as expected.
 
 
-[🔝](#top)
+### [🔝](#top)
