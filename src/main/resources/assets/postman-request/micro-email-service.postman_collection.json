@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "2860b16a-5f7f-4cd6-b7eb-3d036810067a",
+		"name": "micro-email-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26266539"
+	},
+	"item": [
+		{
+			"name": "health-check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "email.localhost/health-check",
+					"host": [
+						"email",
+						"localhost"
+					],
+					"path": [
+						"health-check"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health-check/info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "email.localhost/health-check/info",
+					"host": [
+						"email",
+						"localhost"
+					],
+					"path": [
+						"health-check",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "email/service/send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subject\": \"Support Mail\",\r\n    \"recipients\" : [\"...@gmail.com\", \"...@hotmail.com\"],\r\n    \"body\" : \"Hii! This is support mail. Do not reply that.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "email.localhost/service/send",
+					"host": [
+						"email",
+						"localhost"
+					],
+					"path": [
+						"service",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

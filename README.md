@@ -2,9 +2,12 @@
 Apache Maven 3.9.5 
 java version: openjdk-21.0.2
 -----------------------------------------------------------------------------------
+to run in prod
 create application-prod.properties file as copy of the dev.properties
 change port to 80
 
+
+to run local fill username and password of the sender
 -----------------------------------------------------------------------------------
 docker build -t micro-email-service-image .
 
