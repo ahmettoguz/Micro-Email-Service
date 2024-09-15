@@ -13,6 +13,10 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 @Service
 public class EmailServiceImpl implements EmailService {
 
@@ -31,12 +35,17 @@ public class EmailServiceImpl implements EmailService {
         // validation
         emailDto.validateInput();
 
+        // add default recipient
+        emailDto.addDefaultRecipient();
         try {
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message);
 
-            // Convert List<String> to String[]
-            String[] recipients = emailDto.getRecipients().toArray(new String[0]);
+            // get unique recipients
+            Set<String> uniqueRecipients = new LinkedHashSet<>(emailDto.getRecipients());
+
+            // Convert List<String> to String[
+            String[] recipients = uniqueRecipients.toArray(new String[0]);
 
             // Set email parameters
             helper.setFrom(username);
