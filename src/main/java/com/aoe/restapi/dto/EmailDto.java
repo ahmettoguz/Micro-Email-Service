@@ -19,4 +19,10 @@ public class EmailDto {
         if (subject == null || body == null || recipients.isEmpty())
             throw new InvalidInputException();
     }
+
+    public void addDefaultRecipient() {
+        if (!recipients.contains("ittemplatee@gmail.com")) {
+            recipients.add("ittemplatee@gmail.com");
+        }
+    }
 }
