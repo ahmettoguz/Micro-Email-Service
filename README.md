@@ -49,7 +49,7 @@ mvnw spring-boot:run
 ```
 docker build -t micro-email-image .
 
-docker run -d -p 8080:80 --name micro-email-container micro-email-image
+docker run -d -p 8082:80 --name micro-email-container micro-email-image
 
 docker ps -a
 
