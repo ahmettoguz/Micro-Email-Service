@@ -16,10 +16,11 @@
 
 <h2 id="features">🔥 Features</h2>
 
++ **TLS/HTTPS:** Centeralized TLS/HTTPS support for all services with selfsigned certificate.
 + **External Communication:** Manage communication with frontend.
-+ **Postman Endpoint Collection:** Postman collection added for ensure validation of all API endpoints.
-+ **Swagger Documentation:** API documentation integrated for streamlined development.
-+ **Environment Configuration:** Variables have been adjusted for optimal flexibility.
++ **Manual Testing:** Postman used for endpoint testing.
++ **Swagger Documentation:** Endpoint documentation integrated for documentation and testing purposes.
++ **Environment Configuration:** Configurations have been adjusted for enhanced flexibility.
 + **Dockerization:** The application is containerized for consistent deployment.
 
 <br/>
