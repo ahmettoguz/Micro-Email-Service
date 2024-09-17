@@ -64,7 +64,7 @@ docker rm -f micro-email-container
 * Copy `application-dev.properties` to create `application-prod.properties`.
 * Change `app.var.appMode` to `prod`.
 * Change `server.port` to `80`.
-* Place credentials in the `application-dev.properties` file.
+* Place credentials.
 * Follow the instructions in the [`Micro-Docker-Config repository`](https://github.com/ahmettoguz/Micro-Docker-Config) to configure Docker for production.
   
 <br/>
