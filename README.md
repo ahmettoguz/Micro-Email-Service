@@ -18,10 +18,10 @@
 
 + **TLS/HTTPS:** Centeralized TLS/HTTPS support for all services with selfsigned certificate.
 + **External Communication:** Manage communication with frontend.
-+ **Manual Testing:** Postman used for endpoint testing.
-+ **Swagger Documentation:** Endpoint documentation integrated for documentation and testing purposes.
++ **Postman Endpoint Collection:** Postman collection added for ensure validation of all API endpoints.
++ **Swagger Documentation:** Comprehensive API documentation integrated for documentation and testing purposes.
 + **Environment Configuration:** Configurations have been adjusted for enhanced flexibility.
-+ **Dockerization:** The application is containerized for consistent deployment.
++ **Dockerization:** The application is containerized for consistent deployment and scaling.
 
 <br/>
 
