@@ -113,7 +113,7 @@ docker rm -f micro-email-container
 <h2 id="endpoint-documentation">📍 Endpoint Documentation</h2>
 You can access the full API documentation using Swagger UI.
 
-To view the documentation visit: [sw/swagger-ui/index.html](https://email.localhost/sw/swagger-ui/index.html)
+To view the documentation visit: [`sw/swagger-ui/index.html`](https://email.localhost/sw/swagger-ui/index.html)
 
 ![endpoint-doc](src/main/resources/assets/endpoint-doc/endpoint-doc.png)
 
