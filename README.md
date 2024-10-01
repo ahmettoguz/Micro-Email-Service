@@ -12,6 +12,7 @@
 - [Technologies](#technologies)
 - [Features](#features)
 - [Releases](#releases)
+- [Prerequisites](#prerequisites)
 - [System Startup](#system-startup)
   - [Developer Mode](#developer-mode)
   - [Production Mode](#production-mode)
@@ -64,11 +65,27 @@ This project aims to manage email transmissions using Docker and microservices a
 
 <h2 id="releases">🚢 Releases</h2> 
 
+&nbsp; [![.](https://img.shields.io/badge/1.1.2-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.1.2)
+
 &nbsp; [![.](https://img.shields.io/badge/1.1.1-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.1.1)
 
 &nbsp; [![.](https://img.shields.io/badge/1.1.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.1.0)
 
 &nbsp; [![.](https://img.shields.io/badge/1.0.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.0.0)
+
+<br/>
+
+<h2 id="prerequisites">🔒 Prerequisites</h2>
+
+Google removed plain-text authentication on September 30, 2024. To send emails using a Google account, you now need to enable 2-Step Verification and use an app password.
+
+<br/>
+
+* Go to your Google Account settings at [`myaccount.google.com`](https://myaccount.google.com/).
+* In the navigation panel, select [`Security`](https://myaccount.google.com/security).
+* Under `How you sign in to Google`, select `2-Step Verification`.
+* Add your phone number as a verification method.
+* Go to  [`myaccount.google.com/u/1/apppasswords`](https://myaccount.google.com/u/1/apppasswords) and generate a new app password.
 
 <br/>
 
