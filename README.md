@@ -32,18 +32,17 @@
 
 <br/>
 
-
 <h2 id="prerequisites">🔒 Prerequisites</h2>
 
 Google removed plain-text authentication on September 30, 2024. To send emails using a Google account, you now need to enable 2-Step Verification and use an app password.
 
 <br/>
 
-* Go to your Google Account settings at `myaccount.google.com`.
-* In the navigation panel, select `Security`.
+* Go to your Google Account settings at [`myaccount.google.com`](https://myaccount.google.com/).
+* In the navigation panel, select [`Security`](https://myaccount.google.com/security).
 * Under `How you sign in to Google`, select `2-Step Verification`.
 * Add your phone number as a verification method.
-* Go to `myaccount.google.com/u/1/apppasswords` and generate a new app password.
+* Go to  [`myaccount.google.com/u/1/apppasswords`](https://myaccount.google.com/u/1/apppasswords) and generate a new app password.
 
 <br/>
   
