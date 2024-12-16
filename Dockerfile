@@ -1,5 +1,4 @@
-# Stage 1: Build the application
-FROM eclipse-temurin:21 AS builder
+FROM eclipse-temurin:23 AS builder
 
 # Install Maven
 RUN apt-get update && \
@@ -19,8 +18,7 @@ COPY src ./src
 # Package the application
 RUN mvn clean package -DskipTests
 
-# Stage 2: Run the application
-FROM amazoncorretto:21
+FROM amazoncorretto:23
 
 # Set the working directory
 WORKDIR /app
