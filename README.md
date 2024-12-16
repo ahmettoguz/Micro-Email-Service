@@ -3,13 +3,14 @@
 <br>
 
 <div align="center">
-    <img width=300 src="src/main/resources/assets/banner/banner.png">
+    <img width=300 src="assets/banner/banner.png">
 </div>
 
 ## 🔍 Table of Contents
 
 - [About Project](#intro)
 - [Technologies](#technologies)
+- [Software Versions](#software-versions)
 - [Features](#features)
 - [Releases](#releases)
 - [Prerequisites](#prerequisites)
@@ -17,14 +18,14 @@
   - [Developer Mode](#developer-mode)
   - [Production Mode](#production-mode)
 - [Endpoint Documentation](#endpoint-documentation)
-- [Manuel Testing](#manuel-testing)
+- [Manual Testing](#manual-testing)
 - [Contributors](#contributors)
  
 <br/>
 
 <h2 id="intro">📌 About Project</h2> 
 
-This project aims to manage email transmissions using Docker and microservices architecture, further secured by TLS for encrypted communication. Utilizing Docker enhances service isolation, leading to improved scalability and easier maintenance. Additionally, microservices facilitate secure interactions among small, autonomous components via APIs, which are secured by TLS encryption.
+This project aims to provide reliable email sending capabilities. By using Docker containers, the service ensures easy deployment and management, offering seamless integration with various applications.
 
 <br/>
 
@@ -33,6 +34,10 @@ This project aims to manage email transmissions using Docker and microservices a
 ### DevOps
 
 &nbsp; [![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+
+### Build Tools
+
+&nbsp; [![Apache Maven](https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)](https://maven.apache.org/)
 
 ### Web
 
@@ -52,10 +57,19 @@ This project aims to manage email transmissions using Docker and microservices a
 
 <br/>
 
+<h2 id="software-versions">🏷️ Software Versions</h2>
+
+| Software     | Version    |
+|--------------|------------|
+| Java         | 23         |
+| Spring Boot  | 3.4.0      |
+| Swagger      | 2.7.0      |
+| Apache Maven | 3.9.5      |
+
+<br/>
+
 <h2 id="features">🔥 Features</h2>
 
-+ **TLS/HTTPS:** Centeralized TLS/HTTPS support for all services with selfsigned certificate.
-+ **External Communication:** Manage communication with frontend.
 + **Postman Endpoint Collection:** Postman collection added for ensure validation of all API endpoints.
 + **Swagger Documentation:** Comprehensive API documentation integrated for documentation and testing purposes.
 + **Environment Configuration:** Configurations have been adjusted for enhanced flexibility.
@@ -64,6 +78,8 @@ This project aims to manage email transmissions using Docker and microservices a
 <br/>
 
 <h2 id="releases">🚢 Releases</h2> 
+
+&nbsp; [![.](https://img.shields.io/badge/1.2.0-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.2.0)
 
 &nbsp; [![.](https://img.shields.io/badge/1.1.2-233838?style=flat&label=release&labelColor=470137&color=077521)](https://github.com/ahmettoguz/Micro-Email-Service/tree/release/1.1.2)
 
@@ -95,24 +111,8 @@ Google removed plain-text authentication on September 30, 2024. To send emails u
 
 * Place credentials in the `application-dev.properties` file.
 
-<br/>
-
-#### Using command line
-
 ```
 mvnw spring-boot:run
-```
-
-#### Using Docker
-
-```
-docker build -t micro-email-image .
-
-docker run -d -p 8082:80 --name micro-email-container micro-email-image
-
-docker ps -a
-
-docker rm -f micro-email-container
 ```
 
 <br/>
@@ -130,15 +130,15 @@ docker rm -f micro-email-container
 <h2 id="endpoint-documentation">📍 Endpoint Documentation</h2>
 You can access the full API documentation using Swagger UI.
 
-To view the documentation visit: [`sw/swagger-ui/index.html`](https://email.localhost/sw/swagger-ui/index.html)
+To view the documentation visit: [`sw/swagger-ui/index.html`](https://localhost/sw/swagger-ui/index.html)
 
-![endpoint-doc](src/main/resources/assets/endpoint-doc/endpoint-doc.png)
+![endpoint-doc](assets/endpoint-doc/endpoint-doc.png)
 
 <br/>
 
-<h2 id="manuel-testing">🔬 Manual Testing</h2>
+<h2 id="manual-testing">🔬 Manual Testing</h2>
 
-To run the Postman tests, first import the Postman collection file from the path ./src/main/resources/postman-request/ into Postman by selecting the "Import" option. After importing, locate the collection in Postman, execute the individual requests for each. Review the responses to ensure that the endpoints are functioning as expected.
+To run the Postman tests, first import the Postman collection file from the path `assets/postman-request` into Postman by selecting the `Import` option. After importing, locate the collection in Postman, execute the individual requests for each. Review the responses to ensure that the endpoints are functioning as expected.
 
 <br/>
 
