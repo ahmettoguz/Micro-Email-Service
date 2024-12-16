@@ -1,24 +1,18 @@
------------------------------------------------------------------------------------
-Apache Maven 3.9.5 
-java version: openjdk-21.0.2
------------------------------------------------------------------------------------
-to run in prod
-create application-prod.properties file as copy of the dev.properties
-change port to 80
 
+<h2 id="system-startup">🚀 System Startup</h2> 
 
-to run local fill username and password of the sender
------------------------------------------------------------------------------------
-docker build -t micro-email-service-image .
+<h3 id="developer-mode">🧪 Developer Mode</h3>
 
-docker run -d -p 8080:80 --name micro-email-service-container micro-email-service-image
+* Place credentials on `application-dev.properties`
 
-docker ps -a
-
-docker rm -f micro-email-service-container
-
+```
 mvnw spring-boot:run
+```
 
-swagger:
-http://localhost/sw/swagger-ui/index.html
-http://localhost/sw/v3/api-docs
+<br/>
+
+<h3 id="production-mode">⚡Production Mode</h3> 
+
+1. Copy `application-dev.properties` to create `application-prod.properties`.
+2. Remove Swagger configurations from the properties file.
+3. Follow the instructions in the [Micro-Docker-Config repository](https://github.com/ahmettoguz/Micro-Docker-Config) to configure Docker for production.
