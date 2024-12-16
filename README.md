@@ -3,7 +3,7 @@
 
 <h3 id="developer-mode">🧪 Developer Mode</h3>
 
-* Place credentials on `application-dev.properties`
+* Place credentials in `application-dev.properties`.
 
 ```
 mvnw spring-boot:run
@@ -13,6 +13,8 @@ mvnw spring-boot:run
 
 <h3 id="production-mode">⚡Production Mode</h3> 
 
-1. Copy `application-dev.properties` to create `application-prod.properties`.
-2. Remove Swagger configurations from the properties file.
-3. Follow the instructions in the [Micro-Docker-Config repository](https://github.com/ahmettoguz/Micro-Docker-Config) to configure Docker for production.
+* Copy `application-dev.properties` to create `application-prod.properties`.
+* Change `app.var.appMode` to `prod`.
+* Change `server.port` to `80`.
+* Place credentials.
+* Follow the instructions in the [`Micro-Docker-Config repository`](https://github.com/ahmettoguz/Micro-Docker-Config) to configure Docker for production.
